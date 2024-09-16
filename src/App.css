@@ -1,0 +1,29 @@
+:root {
+  --body-color:#dbdbe3;
+  --header-color: #908ba0;
+  --task-color: #b7b5c4;
+  --main-color:#cbcbd6;
+  --font-color: #000;
+  --btn-color: #0e3ce6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  width: 100vw;
+}
+
+#root {
+  width: 97vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;    
+  background-color: var(--primary-color);
+}
+

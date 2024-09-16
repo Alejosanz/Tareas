@@ -1,0 +1,35 @@
+:root {
+  --info-bg: #e0e0e0; /* Color de fondo para la información de tareas */
+  --info-text-color: #333; /* Color del texto */
+  --info-border-color: #ccc; /* Color del borde */
+  --box-shadow-color: rgba(0, 0, 0, 0.1); /* Color de la sombra */
+  --font-size: 1rem; /* Tamaño de fuente reducido */
+}
+
+.info-tasks {
+  width: 90%; /* Ancho del contenedor */
+  max-width: 800px; /* Ancho máximo para pantallas grandes */
+  text-align: center;
+  font-size: var(--font-size);
+  color: var(--info-text-color);
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--info-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+  border: 1px solid var(--info-border-color); /* Agrega un borde sutil */
+}
+
+.task-pending, .task-done {
+  font-weight: bold;
+  color: var(--info-text-color); /* Asegura que el color del texto sea coherente */
+}
+
+/* Opcional: agregar estilos adicionales para los estados de las tareas */
+.task-pending {
+  color: #f51717; /* Color rojo para tareas pendientes */
+}
+
+.task-done {
+  color: #2e7d32; /* Color verde para tareas completadas */
+}

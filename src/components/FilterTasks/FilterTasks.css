@@ -1,0 +1,50 @@
+:root {
+  --filter-bg: #f5f5f5; /* Fondo del contenedor del filtro */
+  --filter-border: #d0d0d0; /* Color del borde del filtro */
+  --filter-text-color: #333; /* Color del texto del filtro */
+  --filter-select-bg: #ffffff; /* Fondo del select */
+  --filter-select-color: #35c2fa; /* Color del texto del select */
+  --filter-select-border: #ccc; /* Color del borde del select */
+  --filter-font-size: 1.2rem; /* Tamaño de fuente del filtro */
+  --select-padding: 0.5rem; /* Padding del select */
+  --select-border-radius: 5px; /* Radio del borde del select */
+}
+
+.container-filters {
+  width: 90%;
+  max-width: 1000px; /* Ancho máximo para pantallas grandes */
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--filter-bg); /* Fondo del contenedor */
+  border-radius: 8px; /* Radio del borde del contenedor */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+.container-filters > label {
+  font-size: var(--filter-font-size);
+  margin-right: 1rem;
+  font-weight: 600;
+  color: var(--filter-text-color); /* Color del texto del label */
+}
+
+.container-filters > select {
+  width: 12rem;
+  background-color: var(--filter-select-bg); /* Fondo del select */
+  color: var(--filter-select-color); /* Color del texto del select */
+  border: 1px solid var(--filter-select-border); /* Borde del select */
+  border-radius: var(--select-border-radius); /* Radio del borde del select */
+  font-size: var(--filter-font-size);
+  padding: var(--select-padding);
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Transiciones para interacciones */
+}
+
+.container-filters > select:hover,
+.container-filters > select:focus {
+  border-color: var(--filter-select-color); /* Cambia el color del borde al hacer hover o focus */
+  background-color: #e0f7fa; /* Cambia el fondo del select al hacer hover o focus */
+  outline: none; /* Elimina el contorno predeterminado del navegador */
+}

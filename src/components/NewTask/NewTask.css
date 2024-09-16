@@ -1,0 +1,68 @@
+/* Ajustes para el formulario de nueva tarea */
+.frm-task {
+  width: 90vw; /* Ocupa el 90% del ancho de la pantalla */
+  max-width: 600px; /* Ancho máximo para pantallas grandes */
+  padding: 1.5rem;
+  margin: 2rem auto; /* Centra el formulario en la pantalla */
+  background-color: #f8f9fa; /* Color de fondo claro */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Agrupaciones de campos */
+.group-title-task, .group-description-task {
+  width: 100%; /* Ancho completo del contenedor */
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+/* Labels */
+fieldset > label {
+  margin-bottom: 0.5rem; /* Espacio entre label e input */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Color de texto oscuro */
+}
+
+/* Inputs */
+.group-description-task > input,
+.group-title-task > input {
+  width: 100%; /* Ancho completo del contenedor */
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 2px solid #007bff; /* Borde azul brillante */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-top: 0.25rem; /* Espacio entre label e input */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+.group-description-task > input:focus,
+.group-title-task > input:focus {
+  border-color: #0056b3; /* Azul más oscuro cuando está enfocado */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Botón de nueva tarea */
+.btn-new-task {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  background-color: #28a745; /* Verde brillante */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.btn-new-task:hover,
+.btn-new-task:active {
+  background-color: #218838; /* Verde más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}

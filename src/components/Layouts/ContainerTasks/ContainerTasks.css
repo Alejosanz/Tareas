@@ -1,0 +1,54 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 26rem; /* Ajusta según sea necesario */
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  background-color: var(--header-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-content {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-tasks {
+  width: 90vw; /* Aumentamos el ancho del contenedor */
+  max-height: 70vh;
+  background-color: var(--task-color);
+  margin-top: 2rem; /* Separamos las tareas del contenido superior */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; /* Añadimos más relleno */
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para asegurar que los formularios y filtros no se sobrepongan */
+.frm-task, .container-filters, .info-tasks {
+  margin-bottom: 1rem; /* Añadimos espacio entre los elementos */
+  width: 90%; /* Para que se alineen mejor con el nuevo ancho del contenedor */
+}
+
+.item-task {
+  width: 98%; /* Tareas más anchas dentro del contenedor */
+  padding: 1rem;
+  margin-bottom: 0.8rem; /* Más espacio entre tareas */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

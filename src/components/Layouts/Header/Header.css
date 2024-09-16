@@ -1,0 +1,50 @@
+.header-app {
+  width: 100vw; /* Asegura que el header cubra todo el ancho de la pantalla */
+  height: auto; /* Permite que el height se ajuste según el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1000; /* Asegura que el header esté encima de otros contenidos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para mejor visibilidad */
+  margin-top: 22px;
+}
+
+.container-header-1 {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header-1 > .container-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--font-color);
+  text-shadow: -2px -2px #8daaf4;
+  font-size: 2.5rem; /* Ajusta el tamaño de fuente si es necesario */
+  margin: 0; /* Asegúrate de que no haya márgenes que interfieran */
+}
+
+.container-header-1 > .container-img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-img > img {
+  width: 4rem; /* Ajusta el tamaño si es necesario */
+  height: 4rem; /* Ajusta el tamaño si es necesario */
+  border-radius: 50%;
+}

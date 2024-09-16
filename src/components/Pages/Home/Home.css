@@ -1,0 +1,127 @@
+:root {
+  --header-bg: #e0f7fa; /* Azul claro */
+  --task-bg: #e8f5e9; /* Verde muy suave */
+  --main-bg: #f5f5f5; /* Gris muy claro */
+  --task-border: #80deea; /* Azul claro */
+  --font-color: #212121; /* Gris oscuro */
+  --btn-bg: #009688; /* Verde profundo */
+  --btn-hover-bg: #00796b; /* Verde más oscuro */
+  --title-color: #004d40; /* Verde oscuro */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--main-bg);
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-bg);
+}
+
+.header {
+  width: 100%;
+  background-color: var(--header-bg);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  color: var(--title-color);
+  font-size: 2.5rem;
+}
+
+.frm-task {
+  width: 100vw; /* Ocupa el ancho completo de la pantalla */
+  max-width: 100%; /* Evita que se desborde */
+  height: max-content;
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  background-color: #e0e8f9; /* Un color azul claro suave */
+  color: #212121; /* Color de texto oscuro que contraste */
+  border-radius: 10px; /* Un poco de redondeo para darle estilo */
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra para darle profundidad */
+}
+
+
+
+/* Agrupaciones de campos */
+.group-title-task,
+.group-description-task {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Asegura que los inputs estén en una columna */
+  margin: 1rem 0; /* Espacio vertical entre grupos */
+  align-items: center;
+  color: #212121; /* Color del texto */
+  font-size: 1.2rem;
+}
+
+/* Labels */
+fieldset > label {
+  margin-bottom: 0.5rem; /* Espacio debajo de las etiquetas */
+  text-align: left;
+}
+
+/* Inputs */
+.group-description-task > input,
+.group-title-task > input {
+  width: 100%; /* Ancho completo del contenedor padre */
+  max-width: 500px; /* Ancho máximo de los inputs */
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1rem; /* Espacio debajo de los inputs */
+}
+
+/* Botón de nueva tarea */
+.btn-new-task {
+  width: 100%; /* Ancho completo del contenedor padre */
+  max-width: 200px; /* Ancho máximo del botón */
+  height: 2rem;
+  font-size: 0.8rem;
+  border: solid 2px #fff;
+  background-color: var(--btn-bg);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem; /* Espacio arriba del botón */
+}
+
+.btn-new-task:hover,
+.btn-new-task:active {
+  background-color: #fff;
+  border: solid 2px #a477ff;
+  color: #a477ff;
+  transition: 0.5s;
+}
+
+.container-tasks {
+  background-color: var(--task-bg);
+  border: 2px solid var(--task-border);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 90vw; /* Ajusta el ancho del contenedor de tareas */
+  max-width: 800px; /* Ancho máximo del contenedor de tareas */
+  max-height: 70vh;
+  overflow-y: auto;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
